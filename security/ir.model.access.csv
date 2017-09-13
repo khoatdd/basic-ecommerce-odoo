@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_/mnt/extra-addons/basic_ecommerce_/mnt/extra-addons/basic_ecommerce,/mnt/extra-addons/basic_ecommerce./mnt/extra-addons/basic_ecommerce,model_/mnt/extra-addons/basic_ecommerce_/mnt/extra-addons/basic_ecommerce,,1,0,0,0
+product_teamplate_administrator,product.template.administrator,account.model_product_template,group_admin,1,1,1,1
