@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Add Restricted Menus Group -->
+        <record id="group_hide_menus" model="res.groups">
+            <field name="name">Restricted Menus Group</field>
+            <field name="comment">Restricted Menus Group</field>
+        </record>
+
+        <!-- Add Administrator Group -->
+        <record id="group_admin" model="res.groups">
+            <field name="name">Administrator</field>
+            <field name="comment">Administrator</field>
+        </record>
+
+        <!-- Add menu items to Restricted Menus Group to hide these menu from other groups -->
+        <record model="ir.ui.menu" id="sale.menu_sale_order">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sales_team.menu_partner_form">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sale.menu_sale_quotations">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sale.menu_sale_order_invoice">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sale.menu_sale_order_upselling">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="mail.mail_channel_menu_root_chat">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="sales_team.menu_sales_team_act">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+        <record model="ir.ui.menu" id="account.menu_finance">
+            <field name="groups_id" eval="[(6, 0, [ref('group_hide_menus')])]"/>
+        </record>
+    </data>
+</odoo>

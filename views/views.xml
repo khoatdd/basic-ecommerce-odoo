@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
     <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="/mnt/extra-addons/basic_ecommerce.list">
+
+    <!-- <record model="ir.ui.view" id="/mnt/extra-addons/basic_ecommerce.list">
       <field name="name">/mnt/extra-addons/basic_ecommerce list</field>
       <field name="model">/mnt/extra-addons/basic_ecommerce./mnt/extra-addons/basic_ecommerce</field>
       <field name="arch" type="xml">
@@ -12,8 +12,8 @@
           <field name="value2"/>
         </tree>
       </field>
-    </record>
-    -->
+    </record> -->
+
 
     <!-- actions opening views on models -->
     <!--
@@ -55,5 +55,4 @@
     <menuitem name="Server to list" id="/mnt/extra-addons/basic_ecommerce" parent="/mnt/extra-addons/basic_ecommerce.menu_2"
               action="/mnt/extra-addons/basic_ecommerce.action_server"/>
     -->
-  </data>
 </odoo>
