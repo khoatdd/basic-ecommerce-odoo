@@ -20,20 +20,21 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale'],
+    'depends': ['base', 'sale', 'product', 'decimal_precision', 'mail', 'report'],
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
         'security/security.xml',
+        'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
+        # 'views/templates.xml',
+        # 'views/snippets.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'auto_install': True,
+    'auto_install': False,
     'installable': True,
     'application': True,
 }
